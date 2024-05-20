@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Dedupe and Sort</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>IP Dedupe and Sort</h1>
+        <textarea id="inputBox" placeholder="Enter/Paste anything to extract, dedupe, and sort IP addresses" oninput="adjustHeight(this)"></textarea>
+        <div class="clear-button">
+            <button onclick="clearInput()">Clear</button>
+        </div>
+        <div id="output"></div>
+        <div class="button-container">
+            <div class="delimiter-buttons">
+                <button class="delimiter-button" data-delimiter=", ">Comma</button>
+                <button class="delimiter-button" data-delimiter="; ">Semicolon</button>
+                <button class="delimiter-button" data-delimiter=" ">Space</button>
+                <button class="delimiter-button" data-delimiter="\r\n">Carriage Return</button>
+            </div>
+            <div class="copy-button">
+                <button onclick="copyToClipboard()" id="copyButton">Copy</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

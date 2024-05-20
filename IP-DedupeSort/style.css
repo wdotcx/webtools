@@ -1,0 +1,102 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 20px;
+    text-align: left;
+    color: #007bff;
+    margin-top: 0;
+}
+
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    resize: vertical;
+    overflow-y: auto;
+    max-height: 472px;
+}
+
+textarea:focus {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+textarea::placeholder {
+    font-size: 12px;
+    color: #888;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 12px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#output {
+    width: calc(100% - 20px);
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    min-height: 50px;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+div {
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.delimiter-buttons {
+
+}
+
+.copy-button {
+
+}
+
+.clear-button {
+    text-align: right;
+    margin-top: 10px;
+}
